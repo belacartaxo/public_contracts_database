@@ -1,40 +1,37 @@
-# Contratos Públicos
-Base de Dados de Contratos Públicos
-Este projeto foi desenvolvido como parte da disciplina Base de Dados do curso de Ciência de Computadores e de Inteligência Artificial e Ciência de Dados da Faculdade de Ciências da Universidade do Porto. O objetivo foi modelar, povoar e interagir com uma base de dados de contratos públicos, seguindo boas práticas de modelagem e normalização.
+# Public Contracts Database  
+This project was developed as part of the **Databases** course in the **Computer Science** and **Artificial Intelligence & Data Science** programs at the Faculty of Sciences, University of Porto. The aim was to model, populate, and interact with a public contracts database, following best practices in modeling and normalization.
 
 ![alt text](images/image.png)
 
-## Objetivo
-O projeto pretende constituir uma oportunidade de experimentação das matérias expostas na unidade curricular, em particular a especificação de um modelo UML e respetiva tradução para um modelo relacional e a criação, o povoamento e a interrogação de BD utilizando a linguagem SQL.
+## Objective  
+The project serves as an opportunity to apply the concepts learned in the course, particularly in the specification of a UML model and its translation into a relational model, as well as the creation, population, and querying of a database using SQL.
 
-## Tecnologias Utilizadas
-- SQLite: Banco de dados utilizado.
-- SQLite3: Biblioteca para interação com o SQLite.
-- OpenPyxl: Para povoamento automatizado dos dados.
-- Flask: Framework para criação da interface web.
+## Technologies Used
+- **SQLite**: Database used.
+- **SQLite3**: Library for interacting with SQLite.
+- **OpenPyxl**: For automated data population.
+- **Flask**: Framework for creating the web interface.
 
-## Funcionalidades
-### Modelagem de Dados:
-- Diagramas UML
-- Modelo relacional
+## Features
+### Data Modeling:
+- UML Diagrams
+- Relational Model
 
-Seguindo os padrões da 3ª Forma Normal (3FN).
+Following the standards of **3rd Normal Form (3NF)**.
 
-### Povoamento Automatizado:
-- Dados gerados e inseridos automaticamente usando Python e a biblioteca OpenPyxl.
+### Automated Population:
+- Data generated and inserted automatically using Python and the OpenPyxl library.
 
-### Consultas SQL:
-- 15 queries organizadas em 3 níveis de dificuldade.
-Interface Web:
+### SQL Queries:
+- 15 queries organized in 3 levels of difficulty.
 
-### Interface:
-- Pesquisa de contratos públicos por ID.
-![alt text](images/image-1.png)
-- Visualização das queries.
-![alt text](images/image-2.png)
+### Web Interface:
+- **Search** public contracts by ID.  
+  ![alt text](images/image-1.png)
+- **View** the queries.  
+  ![alt text](images/image-2.png)
 
-
-## Estrutura do Projeto 
+## Project Structure
 ```
 /pasta-do-projeto
 ├── /dataset
@@ -58,40 +55,42 @@ Interface Web:
 └── Relatorio.docx                    # Relatório do projeto
 ```
 
-## Como Executar
-### Pré-requisitos
-- Python 3.10 ou superior
-- SQLite instalado
 
-### Passo a Passo
-1. Clone o Repositório:
-    ```
-    git clone https://github.com/bzabot-CS/databases.git
-    cd databases
-    ```
+## How to Run
 
-2.  Instale as Bibliotecas Necessárias:
+### Prerequisites
+- Python 3.10 or higher
+- SQLite installed
+
+### Steps
+1. Clone the repository:
     ```
-    pip install openpyxl flask  
+    git clone https://github.com/belacartaxo/public_contracts_database.git
+    cd public_contracts_database
     ```
 
-3. Criação e Povoamento do Banco de Dados:
-    - Criar a base de dados: 
+2. Install the required libraries:
+    ```
+    pip install openpyxl flask
+    ```
+
+3. Create and populate the database:
+    - Create the database:
     ```
     python povoamento/schema.py
     ```
-    - Popular a base de dados:
+    - Populate the database:
     ```
     python povoamento/seed.py
     ```
 
-3. Inicie a Interface Web:
+4. Start the web interface:
     ```
     python interface/server.py
     ```
-A aplicação estará disponível no navegador através do endereço http://127.0.0.1:9000
+The application will be available at [http://127.0.0.1:9000](http://127.0.0.1:9000)
 
-## Participantes do Projeto - Grupo G2A
+## Project Participants - Group G2A
 - [Bruno Souza Zabot](https://github.com/bzabot) (up202302069)
 - [Guilherme Ferreira Klippel](https://github.com/Klippell) (up202300276)
 - [Isabela Britto Cartaxo](https://github.com/belacartaxo) (up202300339)
